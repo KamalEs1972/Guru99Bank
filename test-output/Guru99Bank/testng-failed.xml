@@ -6,25 +6,11 @@
   </listeners>
   <test thread-count="5" name="Guru99 Bank App Test Cases(failed)">
     <classes>
-      <class name="swagLabs.testCases.VerifyAddNewCustomer">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="addNewCustomerTest"/>
-        </methods>
-      </class> <!-- swagLabs.testCases.VerifyAddNewCustomer -->
-      <class name="swagLabs.testCases.NewCostomerLinkTest">
-        <methods>
-          <include name="VerifyNewCostmerlink"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- swagLabs.testCases.NewCostomerLinkTest -->
       <class name="swagLabs.testCases.LoginPageDataTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="validateLoginCredentials"/>
+          <include name="validateLoginCredentials" invocation-numbers="0"/>
         </methods>
       </class> <!-- swagLabs.testCases.LoginPageDataTest -->
     </classes>

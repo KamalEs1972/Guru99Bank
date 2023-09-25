@@ -22,7 +22,7 @@ public class LoginPageData extends TestBase {
 	@FindBy(css="tr[class='heading3'] td")
 	static WebElement	managerIDMessage;
 	
-	@FindBy(css="img[src='../images/1.gif']")
+	@FindBy(css="img[src='../images/12.gif']")
 	static WebElement	Image1;
 	
 	
