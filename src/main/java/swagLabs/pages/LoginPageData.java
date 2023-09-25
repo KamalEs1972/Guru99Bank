@@ -19,8 +19,13 @@ public class LoginPageData extends TestBase {
 	@FindBy(xpath="//input[@name='btnLogin']")
 	static WebElement	loginButton;
 	
-	@FindBy(xpath="//td[normalize-space()='Manger Id : mngr528039']")
+	@FindBy(css="tr[class='heading3'] td")
 	static WebElement	managerIDMessage;
+	
+	@FindBy(css="img[src='../images/1.gif']")
+	static WebElement	Image1;
+	
+	
 	
 	
 	//Initializing the Page Objects:
@@ -38,12 +43,16 @@ public class LoginPageData extends TestBase {
 	public boolean validateManagerIDMessage(){
 		return managerIDMessage.isDisplayed();
 	}
-//	public String validateManagePageTitle(){
-//		return driver.getTitle();
-//				
-//	}
+	
+	public boolean validateImage1(){
+		return Image1.isDisplayed();
+	}
+	
+	public String validateManagePageTitle(){
+		return driver.getTitle();
+				
+	}
 //	public boolean validateAccountLogoImage(){
 //		return accountLogoImage.isDisplayed();
 //	}
-	
-}
+	}

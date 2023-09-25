@@ -62,8 +62,11 @@ public class LoginPageDataTest extends TestBase {
 		
 //		boolean flag = loginPageData.validateManagerIDMessage();
 //            	Assert.assertTrue(flag);
-		 boolean title = loginPageData.validateManagerIDMessage();
-		Assert.assertEquals(title,"Guru99 Bank Manager HomePage");
+//		 String title = loginPageData.validateManagePageTitle();
+//		Assert.assertEquals(title,"Guru99 Bank Manager HomePage");
+		
+		boolean image1 = loginPageData.validateImage1();
+    	Assert.assertTrue(image1);
 	}
 	
 		
