@@ -27,12 +27,12 @@ public class Waits {
 	}
 	
 	
-	public static void waitUntilElementLocated(Duration time,WebElement element){
+	public static void waitUntilElementLocated(long time,WebElement element){
 		WebDriverWait wait=new WebDriverWait(TestBase.driver,time);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	public static void waitUntilElementToClick(Duration time,WebElement element){
+	public static void waitUntilElementToClick(long time,WebElement element){
 		WebDriverWait wait=new WebDriverWait(TestBase.driver,time);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		}
@@ -79,7 +79,7 @@ public class Waits {
         }
     }
     
-    public static void waitUntil(BooleanSupplier condition, Duration timeinSec2) {
+    public static void waitUntil(BooleanSupplier condition, long timeinSec2) {
         new WebDriverWait(TestBase.driver, timeinSec2).until((WebDriver driver) -> condition.getAsBoolean());
     }
 //    public static void waitUntil(BooleanSupplier condition) {

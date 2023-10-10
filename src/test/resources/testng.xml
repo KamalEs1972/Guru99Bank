@@ -4,7 +4,7 @@
    
   
   <listeners>
-		<listener class-name="swagLabs.ExtentReportListener.ExtentReporterNG" />
+			<listener class-name="listeners.Listeners" />
 	</listeners>
 	
 	<test name="Guru99 Bank App Test Cases">

@@ -142,10 +142,10 @@ public class Elements {
 		select.deselectByValue(value);
 	}
 	
-//	public static void click(WebElement element){
-//		Waits.waitUntil(() ->isDisplayed(element));
-//		element.click();
-//	}
+	public static void click(WebElement element){
+		Waits.waitUntil(() ->isDisplayed(element), 0);
+		element.click();
+	}
 	
 	public static void clickOnlyIfElementPresent(WebElement element){
 		if(isDisplayed(element))

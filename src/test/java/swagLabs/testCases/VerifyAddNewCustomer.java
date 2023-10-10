@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import com.SwagLabs.base.TestBase;
 import com.SwagLabs.util.Log;
 import com.SwagLabs.util.TestUtil;
-import com.SwagLabs.util.Utilities;
+
 
 import swagLabs.pages.LoginPageData;
 import swagLabs.pages.ManagerPage;
