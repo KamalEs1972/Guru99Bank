@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 24 20:30:16 EDT 2023</td>
+<td>Started on:</td><td>Wed Nov 29 12:41:35 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26793 ms)</td>
+<tr><td>Total time:</td><td>33 seconds (33275 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,64 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='swagLabs.testCases.LoginPageDataTest.validateLoginCredentials()'><b>validateLoginCredentials</b><br>Test class: swagLabs.testCases.LoginPageDataTest<br>Parameters: mngr528039, etybahe</td>
-<td><div><pre>java.lang.AssertionError: expected [Guru99 Bank Manager HomePage] but found [true]
-	at swagLabs.testCases.LoginPageDataTest.validateLoginCredentials(LoginPageDataTest.java:66)
+<td title='swagLabs.testCases.VerifyAddNewCustomer.addNewCustomerTest()'><b>addNewCustomerTest</b><br>Test class: swagLabs.testCases.VerifyAddNewCustomer<br>Parameters: mngr541440, ypAbyma</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Customer could not be added !!}
+  (Session info: chrome=119.0.6045.160): Customer could not be added !!
+Build info: version: &apos;3.9.0&apos;, revision: &apos;698b3178f0&apos;, time: &apos;2018-02-05T14:26:55.441Z&apos;
+System info: host: &apos;DESKTOP-2JBFBCA&apos;, ip: &apos;10.5.0.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51893}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: edfba76d523c92ec788ca3c1bc3e355a
+*** Element info: {Using=xpath, value=//*[@id=&quot;customer&quot;]/tbody/tr[1]/td/p}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:108)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:192)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getText(Unknown Source)
+	at com.SwagLabs.base.Elements.VerifyTextEquals(Elements.java:49)
+	at swagLabs.pages.NewCustomerPage.validateRegisterSuccessMessage(NewCustomerPage.java:98)
+	at swagLabs.testCases.VerifyAddNewCustomer.addNewCustomerTest(VerifyAddNewCustomer.java:66)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace808485741", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace808485741'><pre>java.lang.AssertionError: expected [Guru99 Bank Manager HomePage] but found [true]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:643)
-	at swagLabs.testCases.LoginPageDataTest.validateLoginCredentials(LoginPageDataTest.java:66)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace715602332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace715602332'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Customer could not be added !!}
+  (Session info: chrome=119.0.6045.160): Customer could not be added !!
+Build info: version: &apos;3.9.0&apos;, revision: &apos;698b3178f0&apos;, time: &apos;2018-02-05T14:26:55.441Z&apos;
+System info: host: &apos;DESKTOP-2JBFBCA&apos;, ip: &apos;10.5.0.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51893}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: edfba76d523c92ec788ca3c1bc3e355a
+*** Element info: {Using=xpath, value=//*[@id=&quot;customer&quot;]/tbody/tr[1]/td/p}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:108)
+	at com.sun.proxy.$Proxy12.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:192)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getText(Unknown Source)
+	at com.SwagLabs.base.Elements.VerifyTextEquals(Elements.java:49)
+	at swagLabs.pages.NewCustomerPage.validateRegisterSuccessMessage(NewCustomerPage.java:98)
+	at swagLabs.testCases.VerifyAddNewCustomer.addNewCustomerTest(VerifyAddNewCustomer.java:66)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -117,8 +163,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>swagLabs.testCases.LoginPageDataTest@359df09a</td></tr>
+<td>7</td>
+<td>swagLabs.testCases.VerifyAddNewCustomer@6e950bcf</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -129,15 +175,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='swagLabs.testCases.VerifyAddNewCustomer.addNewCustomerTest()'><b>addNewCustomerTest</b><br>Test class: swagLabs.testCases.VerifyAddNewCustomer<br>Parameters: mngr528039, etybahe</td>
+<td title='swagLabs.testCases.NewCostomerLinkTest.VerifyNewCostmerlink()'><b>VerifyNewCostmerlink</b><br>Test class: swagLabs.testCases.NewCostomerLinkTest<br>Parameters: mngr541440, ypAbyma</td>
 <td></td>
-<td>4</td>
-<td>swagLabs.testCases.VerifyAddNewCustomer@609e8838</td></tr>
+<td>3</td>
+<td>swagLabs.testCases.NewCostomerLinkTest@33308786</td></tr>
 <tr>
-<td title='swagLabs.testCases.NewCostomerLinkTest.VerifyNewCostmerlink()'><b>VerifyNewCostmerlink</b><br>Test class: swagLabs.testCases.NewCostomerLinkTest<br>Parameters: mngr528039, etybahe</td>
+<td title='swagLabs.testCases.LoginPageDataTest.validateLoginCredentials()'><b>validateLoginCredentials</b><br>Test class: swagLabs.testCases.LoginPageDataTest<br>Parameters: mngr541440, ypAbyma</td>
 <td></td>
-<td>2</td>
-<td>swagLabs.testCases.NewCostomerLinkTest@742ff096</td></tr>
+<td>3</td>
+<td>swagLabs.testCases.LoginPageDataTest@16414e40</td></tr>
 </table><p>
 </body>
 </html>

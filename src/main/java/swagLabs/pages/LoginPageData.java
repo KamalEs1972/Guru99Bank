@@ -23,7 +23,16 @@ public class LoginPageData extends TestBase {
 	static WebElement	managerIDMessage;
 	
 	@FindBy(css="img[src='../images/1.gif']")
+	
 	static WebElement	Image1;
+	
+@FindBy(css="#gdpr-consent-notice")
+	
+	static WebElement	iframe;
+	
+@FindBy(css="#save")
+	
+	static WebElement allCoockies	;
 	
 	
 	
@@ -38,6 +47,15 @@ public class LoginPageData extends TestBase {
 		passwordField.sendKeys(passWord);
 		loginButton.click();
 		
+		
+
+		//Switch to the frame
+		driver.switchTo().frame(iframe);
+
+		//Now we can click the button
+		
+		allCoockies.click();
+		
 			//	return new AccountPage1();
 }
 	public boolean validateManagerIDMessage(){
@@ -50,7 +68,7 @@ public class LoginPageData extends TestBase {
 	
 	public String validateManagePageTitle(){
 		return driver.getTitle();
-				
+						
 	}
 //	public boolean validateAccountLogoImage(){
 //		return accountLogoImage.isDisplayed();

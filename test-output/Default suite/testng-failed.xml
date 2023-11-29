@@ -6,7 +6,6 @@
       <class name="swagLabs.testCases.LoginPageDataTest">
         <methods>
           <include name="setUp"/>
-          <include name="tearDown"/>
           <include name="validateLoginCredentials" invocation-numbers="0"/>
         </methods>
       </class> <!-- swagLabs.testCases.LoginPageDataTest -->

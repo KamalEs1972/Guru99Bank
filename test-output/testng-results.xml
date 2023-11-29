@@ -1,195 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-10T13:39:29 EDT" name="Guru99Bank" finished-at="2023-10-10T13:40:14 EDT" duration-ms="45678">
+  <suite started-at="2023-11-29T12:45:28 EST" name="Failed suite [Suite]" finished-at="2023-11-29T12:45:43 EST" duration-ms="15180">
     <groups>
     </groups>
-    <test started-at="2023-10-10T13:39:29 EDT" name="Guru99 Bank App Test Cases" finished-at="2023-10-10T13:40:14 EDT" duration-ms="45678">
-      <class name="swagLabs.testCases.NewCostomerLinkTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:swagLabs.testCases.NewCostomerLinkTest@33308786]" started-at="2023-10-10T13:39:29 EDT" name="setUp" finished-at="2023-10-10T13:39:35 EDT" duration-ms="5513" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="VerifyNewCostmerlink(java.lang.String,java.lang.String)[pri:0, instance:swagLabs.testCases.NewCostomerLinkTest@33308786]" started-at="2023-10-10T13:39:35 EDT" name="VerifyNewCostmerlink" data-provider="getLoginData" finished-at="2023-10-10T13:39:37 EDT" duration-ms="2087" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr532023]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[venamAs]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyNewCostmerlink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:swagLabs.testCases.NewCostomerLinkTest@33308786]" started-at="2023-10-10T13:39:37 EDT" name="tearDown" finished-at="2023-10-10T13:39:38 EDT" duration-ms="804" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- swagLabs.testCases.NewCostomerLinkTest -->
-      <class name="swagLabs.testCases.LoginPageDataTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:swagLabs.testCases.LoginPageDataTest@16414e40]" started-at="2023-10-10T13:39:47 EDT" name="setUp" finished-at="2023-10-10T13:39:51 EDT" duration-ms="3962" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validateLoginCredentials(java.lang.String,java.lang.String)[pri:1, instance:swagLabs.testCases.LoginPageDataTest@16414e40]" started-at="2023-10-10T13:39:51 EDT" name="validateLoginCredentials" data-provider="getLoginData" finished-at="2023-10-10T13:40:13 EDT" duration-ms="22078" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr532023]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[venamAs]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[java.net.SocketTimeoutException: timeout
-Build info: version: '3.9.0', revision: '698b3178f0', time: '2018-02-05T14:26:55.441Z'
-System info: host: 'DESKTOP-2JBFBCA', ip: '192.168.253.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
-Driver info: driver.version: EventFiringWebDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: java.net.SocketTimeoutException: timeout
-Build info: version: '3.9.0', revision: '698b3178f0', time: '2018-02-05T14:26:55.441Z'
-System info: host: 'DESKTOP-2JBFBCA', ip: '192.168.253.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
-Driver info: driver.version: EventFiringWebDriver
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:343)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:108)
-at com.sun.proxy.$Proxy12.getScreenshotAs(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:291)
-at com.SwagLabs.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:62)
-at com.SwagLabs.util.WebEventListener.onException(WebEventListener.java:68)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:85)
-at com.sun.proxy.$Proxy11.onException(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:110)
-at com.sun.proxy.$Proxy12.findElement(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:192)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy16.isDisplayed(Unknown Source)
-at swagLabs.pages.LoginPageData.validateImage1(LoginPageData.java:48)
-at swagLabs.testCases.LoginPageDataTest.validateLoginCredentials(LoginPageDataTest.java:68)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.SocketTimeoutException: timeout
-at okio.Okio$4.newTimeoutException(Okio.java:230)
-at okio.AsyncTimeout.exit(AsyncTimeout.java:285)
-at okio.AsyncTimeout$2.read(AsyncTimeout.java:241)
-at okio.RealBufferedSource.indexOf(RealBufferedSource.java:345)
-at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:217)
-at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
-at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
-at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-at okhttp3.RealCall.execute(RealCall.java:77)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:97)
-at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:47)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:157)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-... 54 more
-Caused by: java.net.SocketTimeoutException: Read timed out
-at java.base/java.net.SocketInputStream.socketRead0(Native Method)
-at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
-at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
-at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
-at okio.Okio$2.read(Okio.java:139)
-at okio.AsyncTimeout$2.read(AsyncTimeout.java:237)
-... 77 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:swagLabs.testCases.LoginPageDataTest@16414e40]" started-at="2023-10-10T13:40:13 EDT" name="tearDown" finished-at="2023-10-10T13:40:14 EDT" duration-ms="1038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- swagLabs.testCases.LoginPageDataTest -->
+    <test started-at="2023-11-29T12:45:28 EST" name="Test(failed)" finished-at="2023-11-29T12:45:43 EST" duration-ms="15180">
       <class name="swagLabs.testCases.VerifyAddNewCustomer">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:swagLabs.testCases.VerifyAddNewCustomer@6e950bcf]" started-at="2023-10-10T13:39:38 EDT" name="setUp" finished-at="2023-10-10T13:39:42 EDT" duration-ms="3914" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:swagLabs.testCases.VerifyAddNewCustomer@19b93fa8]" started-at="2023-11-29T12:45:29 EST" name="setUp" finished-at="2023-11-29T12:45:35 EST" duration-ms="6022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addNewCustomerTest(java.lang.String,java.lang.String)[pri:0, instance:swagLabs.testCases.VerifyAddNewCustomer@6e950bcf]" started-at="2023-10-10T13:39:42 EDT" name="addNewCustomerTest" data-provider="getLoginData" finished-at="2023-10-10T13:39:46 EDT" duration-ms="4663" status="PASS">
+        <test-method signature="addNewCustomerTest(java.lang.String,java.lang.String)[pri:0, instance:swagLabs.testCases.VerifyAddNewCustomer@19b93fa8]" started-at="2023-11-29T12:45:35 EST" name="addNewCustomerTest" data-provider="getLoginData" finished-at="2023-11-29T12:45:42 EST" duration-ms="7704" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mngr532023]]>
+                <![CDATA[mngr541440]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[venamAs]]>
+                <![CDATA[ypAbyma]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewCustomerTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:swagLabs.testCases.VerifyAddNewCustomer@6e950bcf]" started-at="2023-10-10T13:39:46 EDT" name="tearDown" finished-at="2023-10-10T13:39:47 EDT" duration-ms="760" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:swagLabs.testCases.VerifyAddNewCustomer@19b93fa8]" started-at="2023-11-29T12:45:42 EST" name="tearDown" finished-at="2023-11-29T12:45:43 EST" duration-ms="877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- swagLabs.testCases.VerifyAddNewCustomer -->
-    </test> <!-- Guru99 Bank App Test Cases -->
-  </suite> <!-- Guru99Bank -->
+    </test> <!-- Test(failed) -->
+  </suite> <!-- Failed suite [Suite] -->
 </testng-results>
